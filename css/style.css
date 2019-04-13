@@ -1,0 +1,462 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 10px;
+    list-style-type: none;
+}
+@font-face {
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+img{
+    width: 100%;
+}
+.header{
+    align-items: center;
+}
+header {
+    width: 100%;
+    display: flex;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 2;
+    color: white;
+}
+.logo a{
+    display: flex;
+}
+.logo a:hover{
+    text-decoration: none;
+    color: #c7b299;
+}
+.logo p{
+    font-size: 3.4rem;
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+}
+.logo img{
+    height: 57px;
+    width: 58px;
+}
+.main-menu{
+    margin-left: 50px;
+}
+.main-menu ul{
+    list-style-type: none;
+    display: flex;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+}
+.main-menu li a{
+    text-decoration: none;
+    font-size: 1.4rem;
+}
+.main-menu ul li a:hover{
+    color: #c7b299;
+}
+.about{
+    display: flex;
+    list-style-type: none;
+}
+.main-menu li:not(:last-child){
+    margin-right: 29px;
+}
+.icon_header{
+    font-size: 18px;
+}
+.icon_header:first-child{
+    margin-right: 5px;
+}
+.icon_header a:hover{
+    color: #c7b299;
+}
+#home{
+    position: relative;
+}
+.slider:before{
+    content: '';
+    width: 100%;
+    height: 100%;
+left: 0;
+    top: 0;
+    background: rgba(0,0,0,0.5);
+    position: absolute;
+    background-blend-mode: darken;
+}
+.slider{
+ background-size: cover;
+    text-align: center;
+    padding-top: 369px;
+    padding-bottom: 380px;
+    color: white;
+    position: relative;
+
+}
+.slider span {
+    font-size: 3.6rem;
+    position: relative;
+}
+
+.slider h1{
+    font-size: 5.2rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    position: relative;
+}
+.slider p{font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    position: relative;
+}
+.button {
+    position: relative;
+    width: 169px;
+    height: 50px;
+    border-radius: 4px;
+    background: #998675;
+    cursor: pointer;
+    outline: none;
+    font-size: 1.4rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    color: white;
+    display: inline-block;
+    padding: 14px;
+    border-bottom: 3px solid #736357;
+    margin-top: 50px;
+}
+.button:hover{
+    color: #c7b299;
+    text-decoration: none;
+}
+.owl-dots{
+    position: absolute;
+    bottom: 33px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.owl-dots .owl-dot.active{
+    background: none !important;
+    outline: none;
+}
+.owl-nav{
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    color: #e0a800;
+}
+.owl-nav .owl-prev{
+    position: absolute;
+    font-size: 18rem;
+}
+.owl-nav .owl-next{
+    position: absolute;
+    font-size: 18rem;
+}
+/*about*/
+.about-box{
+    height: 220px;
+    background: #fff;
+    text-align: center;
+    color: #555555;
+    margin-top: 73px;
+    position: relative;
+}
+.about-icon{
+    font-size: 4rem;
+    color: #555555;
+}
+.about-box h2{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+}
+.about-box p{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+}
+.about-box a:hover{
+    color: #c7b299;
+    text-decoration: none;
+}
+.about-box:before{
+    content: '';
+    width: 70px;
+    height: 2px;
+    background: #f1eee9;
+    position: absolute;
+    bottom: 58px;
+    left: calc(50% - 35px);
+}
+.about-box:before:hover{
+    background: #c7b299;
+}
+/*portfolio*/
+#portfolio{
+    background: #fbfaf8;
+}
+.portfolio{
+    text-align: center;
+    width: 760px;
+    margin: 0 auto;
+    padding-top: 82px;
+}
+.portfolio h2{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 3rem;
+    color: #555555;
+}
+.portfolio p{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 1.6rem;
+    color: #8c8c8c;
+}
+.port-img img{
+    height: 484px;
+    margin-top: 38px;
+}
+#features\ theme{
+    background: #493125;
+}
+.project{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+.project a{
+    width: 170px;
+    height: 46px;
+    background: #998675;
+    color: #FFFFFF;
+    border-bottom: 2px solid #736357;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    font-size: 1.4rem;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.feat-text{
+text-align: center;
+}
+.feat-text h1{
+font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+    font-size: 3rem;
+    color: #555555;
+}
+.feat-text p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 1.6rem;
+    color: #8c8c8c;
+}
+.text h2{
+    color: #FFFFFF;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 2.8rem;
+}
+.text span{
+    color: #bfab93;
+}
+.text p{
+    color: #615855;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 1.8rem;
+}
+.block-img{
+    height: 337px;
+    /*width: 370px;*/
+}
+.latest{
+    margin-bottom: 30px;
+}
+.block-icon:hover {
+    visibility: visible;
+    transition: all 0.6s;
+    cursor: pointer;
+}
+.block {
+     margin-top: 20px;
+     position: relative;
+    margin-bottom: 76px;
+ }
+.block-content {
+    text-align: left;
+    position: absolute;
+    bottom: -76px;
+    background: #fbfaf8;
+    color: #c7b299;
+    width: 100%;
+    padding: 12px 28px;
+}
+.block:hover{
+    background: gray;
+}
+.block:hover .block-content {
+    background: #362f2d;
+    color: #FFFFFF;
+}
+.block-content p:hover{
+    color: #c7b299;
+}
+.block-content h1 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 2.0rem;
+}
+.block-content p{
+    color: #c7b299;
+}
+.block-img {
+    height: 238px;
+    width: 100%;
+}
+.block-icon {
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 238px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 3rem;
+    color: #FFFFFF;
+}
+.block-icon .fa-link{
+    margin-right: 15px;
+    color: #c2ae96;
+}
+.block:hover .block-icon{
+    visibility: visible;
+    background: rgba(0, 0, 0, .6);
+    color: #FFFFFF;
+}
+#features{
+    position: relative;
+    margin-bottom: 80px;
+}
+.feat-btn{
+    width: 169px;
+    height: 48px;
+    border-radius: 4px;
+    background: #998675;
+    cursor: pointer;
+    outline: none;
+    font-size: 1.4rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    color: white;
+    display: inline-block;
+    padding: 14px;
+    border-bottom: 3px solid #736357;
+    position: absolute;
+    left: calc(50% - 84px);
+
+    text-decoration: none;
+    text-align: center;
+    margin-bottom: 80px;
+}
+.feat-btn:hover{
+    background: #c7b299;
+    text-decoration: none;
+    color: #998675;
+}
+.myProject{
+    text-align: center;
+}
+.myProject  section {
+    display: none;
+    padding: 20px 0 0;
+}
+.myProject  input {
+    display: none;
+    outline: none;
+}
+.myProject  label {
+    display: inline-block;
+    margin: 0 5px;
+    padding: 5px 20px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    font-size: 1.4rem;
+    text-align: center;
+    color: #8c8c8c;
+    border-radius: 3px;
+    border: 1px solid #8c8c8c;
+}
+.myProject  label:hover {
+    background: #998675;
+    color: #fff;
+    cursor: pointer;
+}
+.myProject  input:checked + label {
+    color: #fff;
+    background: #998675;
+}
+.myProject  #tab1:checked ~ #content1,
+.myProject  #tab2:checked ~ #content2,
+.myProject  #tab3:checked ~ #content3,
+.myProject  #tab4:checked ~ #content4,
+.myProject  #tab5:checked ~ #content5 {
+    display: block;
+}
+.video-text{
+    padding-bottom: 348px;
+    padding-top: 324px;
+    text-align: center;
+    color: #FFFFFF;
+}
+.video-text h2{
+    font-family: 'Raleway', sans-serif;
+    font-size: 3rem;
+    font-weight: 500;
+}
+.video-text p{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 1.4rem;
+}
+.video-text span{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 1.6rem;
+    color: #c7b299;
+}
+@media screen and (max-width: 800px) {
+    .myProject label {
+        font-size: 0;
+    }
+    /*.myProject label:before {*/
+        /*margin: 0;*/
+        /*font-size: 18px;*/
+    /*}*/
+}
+
+@media screen and (max-width: 500px) {
+    .myProject label {
+        padding: 15px;
+    }
+}
+
+
+
